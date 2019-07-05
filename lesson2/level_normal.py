@@ -78,7 +78,7 @@ while True:
     elif num == 4:
         lst = [1, 2, 4, 5, 6, 2, 5, 2]
         lst2 = []
-        for i in range(len(lst)):
+        for i in lst:
             if lst.count(i) == 1:
                 lst2.append(i)
         print(lst2)
