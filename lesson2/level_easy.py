@@ -4,11 +4,11 @@ while True:
 
     if num == 1:
         fruits = ["яблоко", "банан", "киви", "арбуз"]
-        x = 0
-        for _ in fruits:
-            result = '1. {}'.format(fruits[x].rjust(6))
+        right_offset = len(max(fruits, key = len))
+
+        for index, item in enumerate(fruits, start=1):
+            result = '{}. {}'.format(index, item.rjust(right_offset))
             print(result)
-            x += 1
 
     elif num == 2:
         s1 = [1, 2, 3]
